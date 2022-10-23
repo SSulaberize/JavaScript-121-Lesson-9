@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Verifications</title>
+</head>
+<body>
+    <section>
+        <form action="" id="registration">
+        <div>
+            <input type="text" name="username" id="nameuser" placeholder="username">
+            <div class="errortext" id="error_username"></div>
+        </div>
+        <div>
+            <input type="password" name="userpassword" id="passworduser" placeholder="User's password">
+            <div class="errortext" id="error_userpassword"></div>
+        </div>
+        <div>
+            <input type="password" name="repeatpassword" id="passwordrepeat" placeholder="repeat password">
+            <div class="errortext" id="error_repeatpassword"></div>
+        </div>
+        <div>
+            <input type="radio" name="age" id="age1">
+            <label for="age1">-18</label>
+            <input type="radio" name="age" id="age2">
+            <label for="age2">18-40</label>
+            <input type="radio" name="age" id="age3">
+            <label for="age3">41-65</label>
+            <input type="radio" name="age" id="age4">
+            <label for="age4">65+</label>
+            <div class="errortext" id="error_age"></div>
+        </div>
+        <div>
+            <input type="checkbox" name="terms" id="conditions">
+            <label for="conditions">I agree with terms and conditions</label>
+            <div class="errortext" id="error_terms"></div>
+        </div>
+        <button type="submit">submit</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
