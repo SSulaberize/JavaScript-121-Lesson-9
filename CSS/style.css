@@ -1,4 +1,53 @@
+body{
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    background-color: gray;
+}
+button{
+    width: 75px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: orangered;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 .errortext{
     display: block;
     color: red;
+}
+.pass{
+    display: flex;
+}
+.fa-eye{
+    margin: 10px 0px 0px 20px;
+    color: blue;
+}
+.erroremail{
+    display: block;
+}
+.field{
+    width: 250px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 10px 0px;
+}
+::placeholder{
+    color: blue;
+}
+.tik{
+    margin: 10px;
+}
+.numbers{
+    color: yellow;
+}
+
+.conditions{
+    color: blue;
 }
