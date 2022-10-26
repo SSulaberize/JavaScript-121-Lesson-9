@@ -28,10 +28,6 @@ if (password1 != password2 ){
     error.repeatpassword = 'Password does not match.';
 }
 
-
-
-
-
 // Age
 let age = false;
 formElement.querySelectorAll('[name = "age"]').forEach((element) => {
@@ -72,7 +68,7 @@ if (Object.keys(error).length == 0){
 let emailField = document.getElementById('iemail');
 emailField.addEventListener('keydown', function(){
     let emailValue = document.getElementById('iemail').value;
-    let text = document.getElementById('text');
+    let text = document.getElementById('error_umail');
     let pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (emailValue.match(pattern)) {
