@@ -18,8 +18,7 @@ if (usernameValue.length < 4){
 // Password
 let password1 = document.getElementById('passworduser').value;
 let password2 = document.getElementById('passwordrepeat').value;
-let passwordField = document.getElementById('passworduser');
-let toggleIcon = document.getElementById('icontoggle');
+
 
 if (password1 == ''){
     error.userpassword = 'Users password field cannot remain empty.';
@@ -29,16 +28,9 @@ if (password1 != password2 ){
     error.repeatpassword = 'Password does not match.';
 }
 
-toggleIcon.addEventListener('click', function(){
-    if (passwordField.type == 'password'){
-        passwordField.setAttribute('type', 'text');
-        toggleIcon.classList.remove('fa-eye');
-        toggleIcon.classList.add('.fa-eye-slash');
-    } else 
-    passwordField.setAttribute('type', 'password');
-    toggleIcon.classList.remove('.fa-eye-slash');
-    toggleIcon.classList.add('fa-eye');  
-})
+
+
+
 
 // Age
 let age = false;
@@ -94,3 +86,17 @@ emailField.addEventListener('keydown', function(){
 })
 
 });
+
+let toggleIcon = document.getElementById('icontoggle');
+let passwordField = document.getElementById('passworduser');
+
+toggleIcon.addEventListener('click', function (){
+    if (passwordField.type == 'password'){
+        passwordField.setAttribute('type', 'text');
+        toggleIcon.classList.remove('fa-eye');
+        toggleIcon.classList.add('fa-eye-slash');
+    } else 
+    passwordField.setAttribute('type', 'password');
+    toggleIcon.classList.remove('fa-eye-slash');
+    toggleIcon.classList.add('fa-eye');  
+})
