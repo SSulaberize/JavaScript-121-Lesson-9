@@ -64,11 +64,15 @@ if (Object.keys(error).length == 0){
     formElement.submit();
 } 
 
+
+
+});
+
 // e-mail
 let emailField = document.getElementById('iemail');
 emailField.addEventListener('keydown', function(){
     let emailValue = document.getElementById('iemail').value;
-    let text = document.getElementById('error_umail');
+    let text = document.getElementById('text');
     let pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (emailValue.match(pattern)) {
@@ -79,8 +83,6 @@ emailField.addEventListener('keydown', function(){
     emailField.style.border = '3px solid red';
     text.innerText = 'Email is incorrect';
     text.style.color = 'red';
-})
-
 });
 
 let toggleIcon = document.getElementById('icontoggle');
